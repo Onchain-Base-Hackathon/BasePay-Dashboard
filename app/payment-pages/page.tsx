@@ -40,7 +40,7 @@ const PaymentPages: FC<IProps> = (props) => {
 
     const interval = setInterval(() => {
       getPaymentLinks();
-    }, 10000); // Polling interval set to 5 seconds
+    }, 10000); // Polling interval set to 10 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
